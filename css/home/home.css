@@ -28,7 +28,7 @@ body::before {
 .hero {
     padding: 80px 10%;
     height: 77vh;
-    background: url('/grenadine/img/name_logo.png') center/cover no-repeat;
+    background: url('/grenadine/contents/img/name_logo.png') center/cover no-repeat;
     position: relative;
 }
 .hero::before {
