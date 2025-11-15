@@ -25,7 +25,17 @@ body::before {
     /* opacity: 0.1; */
     z-index: -1;
 }
-
+.hero {
+    padding: 80px 10%;
+    height: 77vh;
+    background: url('/grenadine/contents/img/name_logo.png') center/cover no-repeat;
+    position: relative;
+}
+.hero .overlay {
+    background: rgba(173, 173, 173, 0.174);
+    position: absolute;
+    inset: 0;
+}
 /* =========================================
    ヘッダー
 ========================================= */
