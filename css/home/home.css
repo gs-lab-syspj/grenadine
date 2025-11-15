@@ -67,7 +67,7 @@ h1, h2 {
 /* ===== ホーム（ヒーロー） ===== */
 .hero {
     height: 60vh;
-    background: url('../contents/img/name_logo.png') center/cover no-repeat;
+    background: url('../../../contents/img/name_logo.png') center/cover no-repeat;
     position: relative;
 }
 
