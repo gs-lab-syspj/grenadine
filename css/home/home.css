@@ -21,7 +21,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url('grenadine/contents/img/name_logo.png') center/cover no-repeat;
+    background: url('/grenadine/contents/img/name_logo.png') center/cover no-repeat;
     /* opacity: 0.1; */
     z-index: -1;
 }
