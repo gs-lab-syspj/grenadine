@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大まかな画面</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../grenadine/css/home/home.css">
 </head>
 <body>
-<h2>ヘッダー：シャルノス・グレナデン（画像付き）</h2>
-    ここにプロフィールが書かれます。
+<header class="header">
+        <h1 class="site-title">シャルノス・グレナデン</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">プロフィール</a></li>
+                <li><a href="#links">リンク</a></li>
+                <li><a href="#videos">最新動画</a></li>
+                <li><a href="#goods">グッズ</a></li>
+                <li><a href="#fanart">ファンアート</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= ホーム（背景ビジュアル） ======= -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <h2 class="hero-title">Welcome to the Official Site</h2>
+    </section>
+
+    <!-- ======= プロフィール ======= -->
+    <section id="profile" class="section">
+        <h2 class="section-title">Profile</h2>
+        <p>プロフィール文章をここに記載。</p>
+    </section>
+
+    <!-- ======= SNSリンク ======= -->
+    <section id="links" class="section">
+        <h2 class="section-title">Links</h2>
+        <div class="link-buttons">
+            <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/fRmFISSYTAg" allowfullscreen></iframe>
+            </div>
+            <a href="#" class="btn-red">YouTube</a>
+            <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/動画ID2" allowfullscreen></iframe>
+            </div>
+            <a href="#" class="btn-red">Twitch</a>
+            <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/動画ID3" allowfullscreen></iframe>
+            </div>
+            <a href="#" class="btn-red">X（Twitter）</a>
+        </div>
+    </section>
+
+    <!-- ======= 最新動画 ======= -->
+    <section id="videos" class="section">
+        <h2 class="section-title">Latest Video</h2>
+        <!-- 動画埋め込み（仮） -->
+        <div class="video-frame">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/動画ID" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- ======= グッズ ======= -->
+    <section id="goods" class="section">
+        <h2 class="section-title">Goods</h2>
+        <p>グッズリンクや紹介などを掲載。</p>
+    </section>
+
+    <!-- ======= ファンアート ======= -->
+    <section id="fanart" class="section">
+        <h2 class="section-title">Fan Art</h2>
+        <div class="fanart-grid">
+            <!-- 画像例 -->
+            <img src="images/fa1.jpg" alt="">
+            <img src="images/fa2.jpg" alt="">
+            <img src="images/fa3.jpg" alt="">
+        </div>
+    </section>
 </body>
+<script src="../../grenadine/js/home/home.js"></script>
 </html>

@@ -1,4 +1,161 @@
-body{
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #222222);
-    color: #e5e5e5;
+/* ===== フォント ===== */
+body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #e6e6e6;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    padding-top: 130px;
+}
+
+/* タイトル系は和風フォント */
+h1, h2 {
+    font-family: 'Zen Old Mincho', serif;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+    background: #111111a8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b30030;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 最前面に出す */
+}
+
+.header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #ff003c;
+}
+
+/* ナビゲーションのリンク下線アニメーション */
+.header nav ul li a {
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.header nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #ff003c; /* 赤の下線（色は自由） */
+    box-shadow: 0 0 6px #ff003c;
+    transition: width 0.3s ease;
+}
+
+.header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ===== ホーム（ヒーロー） ===== */
+.hero {
+    height: 60vh;
+    background: url('../../contents/img/name_logo.png') center/cover no-repeat;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(173, 173, 173, 0.174);
+    position: absolute;
+    inset: 0;
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 3rem;
+    color: #9d4157;
+}
+
+/* ===== セクション ===== */
+.section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    border-left: 6px solid #b30030;
+    padding-left: 16px;
+    margin-bottom: 30px;
+}
+
+/* ===== ボタン ===== */
+.btn-red {
+    display: inline-block;
+    background: #b30030;
+    padding: 12px 24px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-red:hover {
+    background: #ff003c;
+}
+
+.section {
+    padding: 40px 20px;
+    background: #121212; /* ダーク背景 */
+    color: #fff;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;          /* 各動画の間隔 */
+    flex-wrap: wrap;    /* 画面幅が狭い時は折り返す */
+}
+
+/* 各動画カード */
+.video-frame {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;      /* 横3つ並べる */
+    min-width: 280px; /* スマホ用に最低幅を確保 */
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ===== 動画 ===== */
+.video-frame {
+    margin-top: 20px;
+}
+
+/* ===== ファンアート ===== */
+.fanart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.fanart-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #1a1a1a;
 }
